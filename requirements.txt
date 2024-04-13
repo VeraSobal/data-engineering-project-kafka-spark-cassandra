@@ -1,0 +1,10 @@
+pyspark
+grpcio-status>=1.59.0
+asgiref
+confluent-kafka>=1.8.2
+requests>=2.27.0,<3
+requests_toolbelt
+aiohttp>=3.9.2
+airflow-code-editor
+black
+fs-s3fs

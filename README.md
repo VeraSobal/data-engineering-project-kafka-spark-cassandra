@@ -139,7 +139,6 @@ https://docs.docker.com/engine/install/ubuntu/
 	loaded_at_df timestamp, - убрать?
 	primary key (timestamp, id, vehicle),
 	);
-loaded_at_df - для того, чтобы правильно выставить watermark?
 
 ###
 	select count(*) from railway.liveboard;
@@ -286,7 +285,7 @@ Brussels Airport - Zaventem: BE.NMBS.008819406 `<br>
 ###
 	sudo docker exec -it superset superset init
 
-Устанавливаем драйвер trino в superset
+Устанавливаем драйвер trino
 ###
 	docker exec -it superset /bin/bash -c "pip install trino"
 ###

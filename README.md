@@ -6,7 +6,7 @@
 
 **Схема**
  
-![image](schema_for_readme.png)
+![image](Schema_for_readme.png)
 
 **Источник данных** - https://docs.irail.be/#liveboard
 
@@ -142,7 +142,7 @@ https://docs.docker.com/engine/install/ubuntu/
 loaded_at_df - для того, чтобы правильно выставить watermark?
 
 ###
-	select * from railway.liveboard;
+	select count(*) from railway.liveboard;
 
 
 ## <a id="titleairflowkafkaspark">**2. Airflow-Kafka-Spark:**</a>
@@ -283,17 +283,14 @@ Brussels Airport - Zaventem: BE.NMBS.008819406 `<br>
 
 ###
 	sudo docker exec -it superset superset db upgrade
+###
 	sudo docker exec -it superset superset init
 
-Заходим устанавливаем драйвер trino в superset
+Устанавливаем драйвер trino в superset
 ###
-	docker exec -it superset /bin/bash -c "python -m pip install trino"
-
-Загружаем дашборд:
+	docker exec -it superset /bin/bash -c "pip install trino"
 ###
-	curl -o dashboard_liveboard.zip https://raw.githubusercontent.com/VeraSobal/data-engineering-project-kafka-spark-cassandra/main/dashboard_liveboard.zip
-	docker cp dashboard_liveboard.zip superset:/tmp/dashboard_liveboard.zip
-	docker exec -it superset /bin/bash -c "superset import_dashboards -p /tmp/dashboard_liveboard.zip -u 'admin'"
+	docker restart superset
 
 Заходим в UI Superset: </br>
 *localhost:8080* </br>
@@ -305,6 +302,12 @@ password - *admin* </br>
 Connection string:
 ###
 	trino://admin:@your_vm_cass_trino_IP_here:8080/railway
+
+Загружаем дашборд:
+###
+	curl -o dashboard_liveboard.zip https://raw.githubusercontent.com/VeraSobal/data-engineering-project-kafka-spark-cassandra/main/dashboard_liveboard.zip
+	docker cp dashboard_liveboard.zip superset:/tmp/dashboard_liveboard.zip
+	docker exec -it superset /bin/bash -c "superset import_dashboards -p /tmp/dashboard_liveboard.zip -u 'admin'"
 
 ##
 

@@ -70,6 +70,7 @@ def schema(arr_dep):
         ]), True),
     ])
 
- # API json schema for spark dataframe
+
+# API json schema for spark dataframe
 SCHEMA_ARR = schema("arrival")
 SCHEMA_DEP = schema("departure")

@@ -108,10 +108,10 @@ with DAG(
         conf={"spark.master": "spark://spark:7077"},
         packages="com.datastax.spark:spark-cassandra-connector-assembly_2.12:3.4.1,org.apache.spark:spark-sql-kafka-0-10_2.12:3.4.1",
         jars=",".join(list(map(lambda x: path_jars+x, ["spark-sql-kafka-0-10_2.12-3.4.1.jar",
-                                            "kafka-clients-3.4.1.jar",
-                                            "spark-token-provider-kafka-0-10_2.12-3.4.1.jar",
-                                            "commons-pool2-2.12.0.jar",
-                                            "spark-cassandra-connector-assembly_2.12-3.4.1.jar"]))),
+                                                       "kafka-clients-3.4.1.jar",
+                                                       "spark-token-provider-kafka-0-10_2.12-3.4.1.jar",
+                                                       "commons-pool2-2.12.0.jar",
+                                                       "spark-cassandra-connector-assembly_2.12-3.4.1.jar"]))),
         dag=kafka_spark_cass_dag
         )
 

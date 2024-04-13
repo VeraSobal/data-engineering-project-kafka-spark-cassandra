@@ -243,16 +243,16 @@ password - *airflow* </br>
 `Key: station_list`<br>
 `Val: ["BE.NMBS.008813003", "BE.NMBS.008814001", "BE.NMBS.008841004", "BE.NMBS.008821006", "BE.NMBS.008892007", "BE.NMBS.008812005", "BE.NMBS.008894201", "BE.NMBS.008822004", "BE.NMBS.008843158", "BE.NMBS.008819406"]`<br>
 `Description:  
-Brussels-Central: BE.NMBS.008813003,
-Brussels-South: BE.NMBS.008814001,
-Liège-Guillemins: BE.NMBS.008841004,
-Antwerp Central: BE.NMBS.008821006
-Ghent-Sint-Pieters: BE.NMBS.008892007
-Brussels-North: BE.NMBS.008812005
-Lokeren: BE.NMBS.008894201
-Mechelen: BE.NMBS.008822004
-Charleroi-Sud: BE.NMBS.008843158
-Brussels Airport - Zaventem: BE.NMBS.008819406 `<br>
+Brussels-Central - BE.NMBS.008813003,
+Brussels-South - BE.NMBS.008814001,
+Liège-Guillemins - BE.NMBS.008841004,
+Antwerp Central - BE.NMBS.008821006
+Ghent-Sint-Pieters - BE.NMBS.008892007
+Brussels-North - BE.NMBS.008812005
+Lokeren - BE.NMBS.008894201
+Mechelen - BE.NMBS.008822004
+Charleroi-Sud - BE.NMBS.008843158
+Brussels Airport-Zaventem - BE.NMBS.008819406 `<br>
 
 `Key: cassandra_host`<br>
 `Val: "your_vm_cass_trino_IP_here"`<br>

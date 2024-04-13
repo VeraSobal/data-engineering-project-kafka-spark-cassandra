@@ -22,10 +22,10 @@ https://docs.docker.com/engine/install/ubuntu/
  3. [Superset](#titlesuperset)
 
 
-## <a id="titlecasstrino">**1. Cassandra-Trino:**</a>
+## <a id="titlecasstrino">**1. Cassandra-Trino**</a>
 
 
-**TRINO:**
+**TRINO**
 
 Устанавливаем и конфигурируем trino:
 
@@ -74,7 +74,7 @@ https://docs.docker.com/engine/install/ubuntu/
 ###
 	docker restart trino
 
-**CASSANDRA:**
+**CASSANDRA**
 
 Запускаем cassandra:
 
@@ -144,7 +144,7 @@ https://docs.docker.com/engine/install/ubuntu/
 	select count(*) from railway.liveboard;
 
 
-## <a id="titleairflowkafkaspark">**2. Airflow-Kafka-Spark:**</a>
+## <a id="titleairflowkafkaspark">**2. Airflow-Kafka-Spark**</a>
 
 Клонируем репозиторий:
 ###
@@ -210,7 +210,7 @@ https://docs.docker.com/engine/install/ubuntu/
 
 
 
-**AIRFLOW:**
+**AIRFLOW**
 
 Заходим в UI Airflow: </br>
 *localhost:8080* </br>
@@ -260,7 +260,7 @@ Brussels Airport - Zaventem: BE.NMBS.008819406 `<br>
 Запускаем kafka_spark_cass_dag (запускает spark-submit со стримингом), api_kafka_dag (переносит данные api в kafka каждую минуту).
 
 
-## <a id="titlesuperset">**3. Superset:**</a>
+## <a id="titlesuperset">**3. Superset**</a>
 
 
 Получаем your_secret_key_here:

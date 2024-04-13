@@ -82,7 +82,7 @@ https://docs.docker.com/engine/install/ubuntu/
 	vi docker-compose.yml
 
 ###
-	version: '2.1'
+	version: '1.0'
 	services:
 	  cassandra:
 	    image: cassandra:latest

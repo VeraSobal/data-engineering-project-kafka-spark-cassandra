@@ -263,12 +263,11 @@ Brussels Airport - Zaventem: BE.NMBS.008819406 `<br>
 ## <a id="titlesuperset">**3. Superset:**</a>
 
 
-Запускаем superset:
-
 Получаем your_secret_key_here:
 ###
 	openssl rand -base64 42
 
+Запускаем superset:
 ###
 	sudo docker run -d -p 8080:8088 -e "SUPERSET_SECRET_KEY=your_secret_key_here" --name superset apache/superset
 

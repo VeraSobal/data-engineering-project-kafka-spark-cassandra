@@ -14,13 +14,13 @@
 
 Реализовано на 3 виртуальных машинах
 
-Устанавливаем и запускаем docker на всех вм (Ubuntu 20.04)
-https://docs.docker.com/engine/install/ubuntu/
 
  1. [Cassandra-Trino](#titlecasstrino)
  2. [Airflow-Kafka-Spark](#titleairflowkafkaspark)
  3. [Superset](#titlesuperset)
 
+Устанавливаем и запускаем docker на всех вм (Ubuntu 20.04)</br>
+https://docs.docker.com/engine/install/ubuntu/
 
 ## <a id="titlecasstrino">**1. Cassandra-Trino**</a>
 
@@ -141,6 +141,7 @@ https://docs.docker.com/engine/install/ubuntu/
 	);
 
 ###
+	select * from railway.liveboard limit 10;
 	select count(*) from railway.liveboard;
 
 
@@ -230,6 +231,7 @@ password - *airflow* </br>
 `Connection Type: Apache Kafka`<br>
 `Config Dict: {"bootstrap.servers": "kafka1:19092,kafka2:19093,kafka3:19094",`<br>
 `		"security.protocol": "PLAINTEXT"}`<br>
+
 
 `Connection Id: irail_liveboard`<br>
 `Connection Type: HTTP`<br>

@@ -142,7 +142,7 @@ https://docs.docker.com/engine/install/ubuntu/
 
 ###
 	select * from railway.liveboard limit 10;
-	select count(*) from railway.liveboard;
+	select count(id) from railway.liveboard;
 
 
 ## <a id="titleairflowkafkaspark">**2. Airflow-Kafka-Spark**</a>

@@ -136,7 +136,7 @@ https://docs.docker.com/engine/install/ubuntu/
 	locationydep float,
 	delaydep int,
 	timedep timestamp,
-	loaded_at_df timestamp, - убрать?
+	loaded_at_df timestamp,
 	primary key (timestamp, id, vehicle),
 	);
 

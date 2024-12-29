@@ -6,7 +6,7 @@
 
 **Схема**
  
-![image](Schema_for_readme.png)
+![image](/Schema_for_readme.png)
 
 **Источник данных** - https://docs.irail.be/#liveboard
 
